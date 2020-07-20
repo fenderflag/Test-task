@@ -1,0 +1,391 @@
+/* poppins-regular - latin */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Poppins Regular'), local('Poppins-Regular'), url('../fonts/poppins-v9-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v9-latin-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-500 - latin */
+
+@font-face {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Poppins Medium'), local('Poppins-Medium'), url('../fonts/poppins-v9-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/poppins-v9-latin-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-regular - latin_cyrillic */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans Regular'), local('OpenSans-Regular'), url('../fonts/open-sans-v17-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v17-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-600 - latin_cyrillic */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url('../fonts/open-sans-v17-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v17-latin_cyrillic-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-regular - latin_cyrillic */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'), url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-500 - latin_cyrillic */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* roboto-700 - latin_cyrillic */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('../fonts/roboto-v20-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v20-latin_cyrillic-700.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    background: #FAFAFA;
+}
+
+.wrapper {
+    margin: 0 auto;
+    position: relative;
+}
+
+.side-bar {
+    position: fixed;
+    width: 240px;
+    height: 100%;
+    background: #F3F4F9;
+}
+
+/* Main logo styles start */
+
+.side-bar__main-logo {
+    margin: 41px 78px 60px 41px;
+}
+
+.side-bar__main-logo img {
+    margin-right: 10px;
+}
+
+.side-bar__main-logo__company-name {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.side-bar__main-logo__company-name a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Main logo styles end */
+
+/* Main menu styles start */
+
+.side-bar__item {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 42px;
+    margin-left: 40px;
+    padding-left: 36px;
+    color: #333333;
+    position: relative;
+}
+
+.side-bar__item:hover {
+    color: #34ABE0;
+}
+
+.side-bar__item::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 3px;
+    height: 24px;
+    background: #34ABE0;
+    left: -40px;
+    top: 0;
+}
+
+.side-bar__item:hover::after {
+    display: block;
+}
+
+.side-bar__item a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.side-bar__item__catalog {
+    background: url(../img/svg/catalog-ico.svg) no-repeat left;
+}
+
+.side-bar__item__catalog:hover {
+    background: url(../img/svg/Active/catalog-ico-active.svg) no-repeat left;
+}
+
+.side-bar__item__health {
+    background: url(../img/svg/health-ico.svg) no-repeat left;
+}
+
+.side-bar__item__health:hover {
+    background: url(../img/svg/Active/health-ico-active.svg) no-repeat left;
+}
+
+.side-bar__item__beauty {
+    background: url(../img/svg/beauty-ico.svg) no-repeat left;
+}
+
+.side-bar__item__beauty:hover {
+    background: url(../img/svg/Active/beauty-ico-active.svg) no-repeat left;
+}
+
+.side-bar__item__fun {
+    background: url(../img/svg/fun-ico.svg) no-repeat left;
+}
+
+.side-bar__item__fun:hover {
+    background: url(../img/svg/Active/fun-ico-active.svg) no-repeat left;
+}
+
+.side-bar__item__cars {
+    background: url(../img/svg/car-ico.svg) no-repeat left;
+}
+
+.side-bar__item__cars:hover {
+    background: url(../img/svg/Active/car-ico-active.svg) no-repeat left;
+}
+
+/* Main menu styles end */
+
+.main-content__wrapper {
+    margin-left: 240px;
+}
+
+.main-content__head {
+    background: #ffffff;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.main-content__head h2 {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: #000000;
+    opacity: 0.85;
+    margin: 0px auto 31px 60px;
+}
+
+.main-content__search {
+    margin: 0px 60px
+}
+
+.main-content__search input[type=text] {
+    border: 1px solid rgba(51, 51, 51, 0.2);
+    border-radius: 50px;
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding-left: 44px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    color: #333333;
+    background: url(../img/svg/search-ico.svg) no-repeat 15px 15px;
+}
+
+.main-content__search input[type=text]::placeholder {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+}
+
+/* Coupons styles start */
+
+.main-content__coupons {
+    margin: 40px 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    gap: 20px;
+}
+
+.main-content__coupons .coupons-item {
+    display: flex;
+    justify-content: space-between;
+    width: 347px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    min-height: 160px;
+    position: relative;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    border: 1px solid transparent;
+}
+
+.coupons-item-shadow {
+    background: transparent;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+    z-index: 2;
+}
+
+
+
+.main-content__coupons .coupons-item::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background: #FAFAFA;
+    border-radius: 1px;
+    top: 50%;
+    left: -5px;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 1;
+}
+
+.main-content__coupons .coupons-item:hover::before {
+    border-top: 1px solid #DF212D;
+    border-right: 1px solid #DF212D;
+}
+
+.main-content__coupons .coupons-item::after {
+    /* content: "";
+    width: 10px;
+    height: 10px;
+    background: #FAFAFA;
+    border-radius: 1px;
+    top: 50%;
+    right: -5px;
+    transform: rotate(45deg);
+    position: absolute;
+    z-index: 1; */
+
+    content: "";
+      position: absolute;
+      right: -1px;
+      top: 50%;
+      width: 0;
+      height: 0;
+      border-top: 8px solid transparent;
+      border-right: 8px solid #FAFAFA;
+      border-bottom: 8px solid transparent;
+}
+
+/* .main-content__coupons .coupons-item:hover::after {
+    border-bottom: 1px solid #DF212D;
+    border-left: 1px solid #DF212D;
+} */
+
+.main-content__coupons .coupons-item:hover {
+    border: 1px solid #DF212D;
+}
+
+.coupons-item-text {
+    margin: 16px 20px;
+}
+
+.coupons-item__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 4px;
+}
+
+.coupons-item__description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    color: #000000;
+    opacity: 0.5;
+    margin-bottom: 43px;
+}
+
+.coupons-item__offer {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 28px;
+    color: #DF212D;
+    margin-bottom: 6px;
+}
+
+.coupons-item__description-2 {
+    display: block;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    color: #000000;
+    opacity: 0.5;
+}
+
+.coupons-image img {
+    max-width: 130px;
+    border-radius: 10px;
+}
+
+/* Coupons styles end */
