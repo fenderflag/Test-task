@@ -124,7 +124,24 @@ body {
 
 /* Main logo styles end */
 
+/* Burger-menu styles start */
+
+.side-bar__burger-menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    width: 100px;
+    height: 100px;
+    background: red;
+}
+
+/* Burger-menu styles end */
+
 /* Main menu styles start */
+
+.side-bar__list a {
+    text-decoration: none;
+}
 
 .side-bar__item {
     font-family: Open Sans;
@@ -274,15 +291,7 @@ body {
     border: 1px solid transparent;
 }
 
-.coupons-item-shadow {
-    background: transparent;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
-    z-index: 2;
-}
-
-
-
-.main-content__coupons .coupons-item::before {
+/* .main-content__coupons .coupons-item::before {
     content: "";
     width: 10px;
     height: 10px;
@@ -301,7 +310,7 @@ body {
 }
 
 .main-content__coupons .coupons-item::after {
-    /* content: "";
+    content: "";
     width: 10px;
     height: 10px;
     background: #FAFAFA;
@@ -310,26 +319,61 @@ body {
     right: -5px;
     transform: rotate(45deg);
     position: absolute;
-    z-index: 1; */
-
-    content: "";
-      position: absolute;
-      right: -1px;
-      top: 50%;
-      width: 0;
-      height: 0;
-      border-top: 8px solid transparent;
-      border-right: 8px solid #FAFAFA;
-      border-bottom: 8px solid transparent;
+    z-index: 1;
 }
 
-/* .main-content__coupons .coupons-item:hover::after {
+.main-content__coupons .coupons-item:hover::after {
     border-bottom: 1px solid #DF212D;
     border-left: 1px solid #DF212D;
 } */
 
 .main-content__coupons .coupons-item:hover {
     border: 1px solid #DF212D;
+}
+
+.main-content__coupons .bg-image-wrapper {
+    width: 100%;
+}
+
+.main-content__coupons .bg-image-wrapper.bg-image-1 {
+    background: url(../img/image-1.png) no-repeat right;
+    background-size: contain;
+    border-radius: 10px;
+}
+
+.main-content__coupons .bg-image-wrapper.bg-image-2 {
+    background: url(../img/image-2.png) no-repeat right;
+    background-size: contain;
+}
+
+.main-content__coupons .bg-image-wrapper.bg-image-3 {
+    background: url(../img/image-3.png) no-repeat right;
+    background-size: contain;
+}
+
+.main-content__coupons .bg-image-wrapper.bg-image-4 {
+    background: url(../img/image-4.png) no-repeat right;
+    background-size: contain;
+}
+
+.main-content__coupons .bg-image-wrapper.bg-image-5 {
+    background: url(../img/image-5.png) no-repeat right;
+    background-size: contain;
+}
+
+.main-content__coupons .bg-image-wrapper.bg-image-6 {
+    background: url(../img/image-6.png) no-repeat right;
+    background-size: contain;
+}
+
+.main-content__coupons .bg-image-wrapper.bg-image-7 {
+    background: url(../img/image-7.png) no-repeat right;
+    background-size: contain;
+}
+
+.main-content__coupons .bg-image-wrapper.bg-image-8 {
+    background: url(../img/image-8.png) no-repeat right;
+    background-size: contain;
 }
 
 .coupons-item-text {
@@ -383,9 +427,36 @@ body {
     opacity: 0.5;
 }
 
-.coupons-image img {
-    max-width: 130px;
-    border-radius: 10px;
-}
-
 /* Coupons styles end */
+
+/* Media styles start */
+
+@media screen and (max-width: 768px) {
+    .side-bar {
+        width: 104px;
+    }
+    .side-bar__item-off {
+        display: none;
+    }
+    .main-content__wrapper {
+        margin-left: 104px;
+    }
+    .main-content__coupons {
+        margin: 26px 26px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        gap: 20px;
+    }
+    .main-content__coupons .coupons-item {
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        background: #FFFFFF;
+        border-radius: 10px;
+        min-height: 144px;
+        position: relative;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.15);
+        border: 1px solid transparent;
+    }
+}
